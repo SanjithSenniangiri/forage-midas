@@ -1,5 +1,6 @@
 package com.jpmc.midascore;
 
+import com.jpmc.midascore.repository.UserRepository;
 import org.junit.jupiter.api.Test;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -19,6 +20,9 @@ public class TaskThreeTests {
 
     @Autowired
     private UserPopulator userPopulator;
+
+    @Autowired
+    private UserRepository userRepository;
 
     @Autowired
     private FileLoader fileLoader;
